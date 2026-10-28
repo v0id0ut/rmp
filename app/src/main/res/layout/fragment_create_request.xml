@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/btnBackFromCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="6dp"
+            android:text="← Создать заявку"
+            android:textColor="@color/text_main"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Начните свой обмен."
+            android:textColor="@color/text_main"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Расскажите, чему хотите научиться и чем готовы поделиться взамен."
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Чем могу поделиться (ваш навык)"
+            android:textColor="@color/text_main"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etSkillOffer"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/bg_gray"
+            android:hint="Например: Основы игры на гитаре"
+            android:paddingHorizontal="14dp"
+            android:text="Разбор дизайн-портфолио"
+            android:textColor="@color/text_main"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Чему хочу научиться взамен"
+            android:textColor="@color/text_main"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etSkillWant"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/bg_gray"
+            android:hint="Например: Уроки вокала или испанского"
+            android:paddingHorizontal="14dp"
+            android:text="Основы игры на гитаре"
+            android:textColor="@color/text_main"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Подробности"
+            android:textColor="@color/text_main"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etSkillDetails"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/bg_gray"
+            android:gravity="top"
+            android:hint="Опишите формат и опыт..."
+            android:padding="12dp"
+            android:text="Хочу с нуля освоить несколько аккордов. Взамен с радостью разберу ваше дизайн-портфолио!"
+            android:textColor="@color/text_main"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Когда и где удобно?"
+            android:textColor="@color/text_main"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etWhen"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@color/bg_gray"
+                android:paddingHorizontal="12dp"
+                android:text="Выходные"
+                android:textColor="@color/text_main"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/etPlace"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@color/bg_gray"
+                android:paddingHorizontal="12dp"
+                android:text="Онлайн / Центр"
+                android:textColor="@color/text_main"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPublishRequest"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/primary_blue"
+            android:text="→ Опубликовать заявку"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
